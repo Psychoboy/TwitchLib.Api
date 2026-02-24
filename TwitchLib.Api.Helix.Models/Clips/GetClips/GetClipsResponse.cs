@@ -14,12 +14,12 @@ public class GetClipsResponse
   /// <para>For lists returned by id, the list is in the same order as the input IDs.</para>
   /// </summary>
   [JsonProperty(PropertyName = "data")]
-  public Clip[] Clips { get; protected set; }
+  public Clip[] Clips { get; protected set; } = null!;
 
   /// <summary>
   /// <para>The information used to page through the list of results.<br/>
   /// The object is empty if there are no more pages left to page through.</para>
   /// </summary>
   [JsonProperty(PropertyName = "pagination")]
-  public Pagination Pagination { get; protected set; }
+  public Pagination Pagination { get; protected set; } = null!;
 }

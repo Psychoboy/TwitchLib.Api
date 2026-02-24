@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿#nullable disable
+using Newtonsoft.Json;
 
 namespace TwitchLib.Api.Helix.Models.Chat.ChatSettings;
 
@@ -35,7 +36,7 @@ public class ChatSettingsResponseModel
     /// The moderator’s ID.
     /// </summary>
     [JsonProperty(PropertyName = "moderator_id")]
-    public bool ModeratorId { get; protected set; }
+    public string ModeratorId { get; protected set; }
 
     /// <summary>
     /// A Boolean value that determines whether the broadcaster adds a short delay before chat messages appear in the chat room. 
